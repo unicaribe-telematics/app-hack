@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Denuncia Ciudadana</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_email">Correo Electrónico</string>
+    <string name="login_pass">Contraseña</string>
+    <string name="login_auto">Iniciar sesión automáticamente</string>
+    <string name="login_login">Iniciar sesión</string>
+    <string name="login_signup">Registrarse</string>
+    <string name="login_terms">Terminos y Condiciones</string>
+
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="main_history">Ver Historial</string>
+    <string name="main_complaint">Realizar Denuncia</string>
+    <string name="main_pdata">Configurar datos personales</string>
+    <string name="main_logout">Cerrar Sesión</string>
+
+    <string name="title_activity_complaint">Complaint</string>
+    <string name="complaint_load">Cargar Imagen</string>
+    <string name="complaint_address">*Dirección del incidente</string>
+    <string name="lastname">Apellidos</string>
+    <string name="firstname">Nombre(s)</string>
+    <string name="phone">Teléfono</string>
+    <string name="state">*Estado</string>
+    <string name="city">*Municipio</string>
+    <string name="complaint_org">*Organización</string>
+    <string name="complaint_secondaddress">*Ingresar dirección de contacto</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="obligatory">(*)Datos Obligatorios</string>
+
+    <string name="title_activity_pdata_configuration">Datos Personales</string>
+
+    <string name="title_activity_change_password1">Cambiar Contraseña</string>
+    <string name="change_pass1">Contraseña Actual</string>
+    <string name="change_repeat">Repetir Contraseña</string>
+    <string name="change_pass2">Introducir Nueva Contraseña</string>
+    <string name="title_activity_change_password2">ChangePassword2</string>
+
+    <string name="title_activity_sign_up">Registro</string>
+    <string name="title_activity_history">History</string>
+
+
+</resources>
