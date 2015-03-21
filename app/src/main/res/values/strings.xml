@@ -41,6 +41,7 @@
 
     <string name="title_activity_sign_up">Registro</string>
     <string name="title_activity_history">History</string>
+    <string name="title_activity_developers">Developers</string>
 
 
 </resources>

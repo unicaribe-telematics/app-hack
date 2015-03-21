@@ -32,6 +32,15 @@ public class LogIn extends ActionBarActivity {
             }
 
         });
+
+        Button next3 = (Button) findViewById(R.id.button18);
+        next3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Developers.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
     }
 
     @Override

@@ -96,9 +96,10 @@
         android:layout_below="@+id/editText9"
         android:layout_centerHorizontal="true" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/editText11"
         android:layout_below="@+id/editText10"
         android:layout_alignRight="@+id/editText10"
