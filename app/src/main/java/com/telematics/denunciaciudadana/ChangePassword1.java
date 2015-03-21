@@ -1,17 +1,33 @@
 package com.telematics.denunciaciudadana;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class ChangePassword1 extends ActionBarActivity {
+    Button CancelarC, AceptarC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password1);
+        AceptarC = (Button)findViewById(R.id.button11);
+        CancelarC = (Button)findViewById(R.id.button12);
+    }
+    public void aceptarC(View view)
+    {
+        Intent i = new Intent(this, ChangePassword2.class);
+        startActivity(i);
+    }
+    public void cancelarC(View view)
+    {
+        Intent i = new Intent(this, MainMenu.class);
+        startActivity(i);
     }
 
 

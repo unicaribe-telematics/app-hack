@@ -1,30 +1,36 @@
 package com.telematics.denunciaciudadana;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.app.Activity;
-import android.view.View.on
 
 
 public class LogIn extends ActionBarActivity {
-
-    final Button btnBoton1 = (Button) findViewById(R.id.button);
-    btnBoton1.setOnClickListener(new View.OnClickListener(){
-       @Override
-               public void onClick(findViewById())
-                {
-                    lblMensaje.setText("")
-                }
-    });
+    Button IniciaSesion, Registrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+
+        IniciaSesion = (Button)findViewById(R.id.button);
+        Registrarse = (Button)findViewById(R.id.button2);
+    }
+    public void onClickSesion(View view)
+    {
+        Intent lol;
+        lol = new Intent(this, MainMenu.class);
+        startActivity(lol);
+    }
+    public void onClickregistrarse(View view)
+    {
+        Intent lpl;
+        lpl = new Intent(this, SignUp.class);
+        startActivity(lpl);
     }
 
 

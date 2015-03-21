@@ -1,19 +1,35 @@
 package com.telematics.denunciaciudadana;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class PDataConfiguration extends ActionBarActivity {
+    Button Cancelar1, Aceptar1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdata_configuration);
+        Aceptar1 = (Button)findViewById(R.id.button9);
+        Cancelar1 = (Button)findViewById(R.id.button10);
     }
 
+    public void aceptar1(View view)
+    {
+        Intent i = new Intent(this, MainMenu.class);
+        startActivity(i);
+    }
+    public void cancelar1(View view)
+    {
+        Intent i = new Intent(this, MainMenu.class);
+        startActivity(i);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

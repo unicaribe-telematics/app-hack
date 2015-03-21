@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.telematics.denunciaciudadana.MainMenu"
-    android:id="@+id/">
+    android:id="@+id/change_psswd">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,8 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:text="@string/main_history" />
+        android:text="@string/main_history"
+        android:onClick="historial" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -37,7 +38,8 @@
         android:text="@string/main_complaint"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="denuncia" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -46,7 +48,8 @@
         android:text="@string/main_pdata"
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="Datos_Personales" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +60,8 @@
         android:layout_below="@+id/button5"
         android:layout_alignLeft="@+id/button5"
         android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="52dp" />
+        android:layout_marginTop="52dp"
+        android:onClick="cerrar_sesion" />
 
     <Button
         android:layout_width="wrap_content"
@@ -65,6 +69,7 @@
         android:text="Cambiar contraseña"
         android:id="@+id/change_psswd"
         android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="ChangePass" />
 
 </RelativeLayout>

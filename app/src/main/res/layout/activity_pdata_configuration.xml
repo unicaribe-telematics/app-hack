@@ -95,5 +95,6 @@
         android:id="@+id/button10"
         android:layout_below="@+id/textView6"
         android:layout_toRightOf="@+id/button9"
-        android:layout_toEndOf="@+id/button9" />
+        android:layout_toEndOf="@+id/button9"
+        android:onClick="cancelar1" />
 </RelativeLayout>
