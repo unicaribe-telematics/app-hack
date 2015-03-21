@@ -1,38 +1,38 @@
 package com.telematics.denunciaciudadana;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-
 public class LogIn extends ActionBarActivity {
-    Button IniciaSesion, Registrarse;
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        IniciaSesion = (Button)findViewById(R.id.button);
-        Registrarse = (Button)findViewById(R.id.button2);
-    }
-    public void onClickSesion(View view)
-    {
-        Intent lol;
-        lol = new Intent(this, MainMenu.class);
-        startActivity(lol);
-    }
-    public void onClickregistrarse(View view)
-    {
-        Intent lpl;
-        lpl = new Intent(this, SignUp.class);
-        startActivity(lpl);
-    }
+        Button next2 = (Button) findViewById(R.id.button2);
+        next2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), SignUp.class);
+                startActivityForResult(myIntent, 0);
+                }
 
+        });
+
+        Button next = (Button) findViewById(R.id.Button01);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

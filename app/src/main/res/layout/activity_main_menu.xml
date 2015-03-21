@@ -4,8 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.telematics.denunciaciudadana.MainMenu"
-    android:id="@+id/change_psswd">
+    tools:context="com.telematics.denunciaciudadana.MainMenu">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,8 +27,7 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:text="@string/main_history"
-        android:onClick="historial" />
+        android:text="@string/main_history" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -38,8 +36,7 @@
         android:text="@string/main_complaint"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:onClick="denuncia" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -48,28 +45,24 @@
         android:text="@string/main_pdata"
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:onClick="Datos_Personales" />
+        android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/main_logout"
-        android:id="@+id/textView4"
+        android:text="Cambiar Contraseña"
+        android:id="@+id/button"
         android:layout_below="@+id/button5"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="52dp"
-        android:onClick="cerrar_sesion" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cambiar contraseña"
-        android:id="@+id/change_psswd"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:onClick="ChangePass" />
+        android:text="@string/main_logout"
+        android:id="@+id/button17"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
 
 </RelativeLayout>

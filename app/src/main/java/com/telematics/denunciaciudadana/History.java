@@ -1,27 +1,17 @@
 package com.telematics.denunciaciudadana;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 
 public class History extends ActionBarActivity {
-    Button principal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-        principal = (Button)findViewById(R.id.button17);
-    }
-    public void principal(View view)
-    {
-        Intent i = new Intent(this, MainMenu.class);
-        startActivity(i);
     }
 
 

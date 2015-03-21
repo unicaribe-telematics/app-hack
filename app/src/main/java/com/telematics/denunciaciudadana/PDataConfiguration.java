@@ -1,34 +1,37 @@
 package com.telematics.denunciaciudadana;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-
 public class PDataConfiguration extends ActionBarActivity {
-    Button Cancelar1, Aceptar1;
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdata_configuration);
-        Aceptar1 = (Button)findViewById(R.id.button9);
-        Cancelar1 = (Button)findViewById(R.id.button10);
-    }
 
-    public void aceptar1(View view)
-    {
-        Intent i = new Intent(this, MainMenu.class);
-        startActivity(i);
-    }
-    public void cancelar1(View view)
-    {
-        Intent i = new Intent(this, MainMenu.class);
-        startActivity(i);
+        Button next = (Button) findViewById(R.id.button9);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button next2 = (Button) findViewById(R.id.button10);
+        next2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
     }
 
     @Override

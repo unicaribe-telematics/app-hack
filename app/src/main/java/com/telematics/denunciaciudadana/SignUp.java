@@ -1,35 +1,38 @@
 package com.telematics.denunciaciudadana;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-
 public class SignUp extends ActionBarActivity {
-    Button Cancelar, Aceptar;
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        Aceptar = (Button)findViewById(R.id.button15);
-        Cancelar = (Button)findViewById(R.id.button16);
-    }
-    public void aceptar(View view)
-    {
-        Intent i = new Intent(this, History.class);
-        startActivity(i);
-    }
-    public void cancelar(View view)
-    {
-        Intent i = new Intent(this, MainMenu.class);
-        startActivity(i);
-    }
 
+        Button next3 = (Button) findViewById(R.id.button15);
+        next3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button next4 = (Button) findViewById(R.id.button16);
+        next4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), LogIn.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

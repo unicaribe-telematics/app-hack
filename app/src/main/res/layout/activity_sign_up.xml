@@ -25,13 +25,13 @@
         android:layout_below="@+id/textView9"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
-        android:text="*Correo Electrónico" />
+        android:hint="*Correo Electrónico" />
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="*Contraseña"
+        android:hint="*Contraseña"
         android:ems="10"
         android:id="@+id/editText22"
         android:layout_below="@+id/editText21"
@@ -41,7 +41,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="*Repetir Contraseña"
+        android:hint="*Repetir Contraseña"
         android:ems="10"
         android:id="@+id/editText23"
         android:layout_below="@+id/editText22"
@@ -51,7 +51,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/lastname"
+        android:hint="@string/lastname"
         android:ems="10"
         android:id="@+id/editText24"
         android:layout_below="@+id/editText23"
@@ -61,7 +61,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/firstname"
+        android:hint="@string/firstname"
         android:ems="10"
         android:id="@+id/editText25"
         android:layout_below="@+id/editText24"
@@ -75,7 +75,7 @@
         android:id="@+id/editText26"
         android:layout_below="@+id/editText25"
         android:layout_centerHorizontal="true"
-        android:text="@string/phone" />
+        android:hint="@string/phone" />
 
     <EditText
         android:layout_width="250dp"
@@ -85,7 +85,7 @@
         android:id="@+id/editText27"
         android:layout_below="@+id/editText26"
         android:layout_centerHorizontal="true"
-        android:text="@string/state" />
+        android:hint="@string/state" />
 
     <EditText
         android:layout_width="250dp"
@@ -95,7 +95,7 @@
         android:id="@+id/editText28"
         android:layout_below="@+id/editText27"
         android:layout_centerHorizontal="true"
-        android:text="@string/city" />
+        android:hint="@string/city" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,6 +123,5 @@
         android:id="@+id/button16"
         android:layout_below="@+id/textView10"
         android:layout_toRightOf="@+id/button15"
-        android:layout_toEndOf="@+id/button15"
-        android:onClick="cancelar" />
+        android:layout_toEndOf="@+id/button15" />
 </RelativeLayout>

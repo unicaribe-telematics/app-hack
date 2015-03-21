@@ -20,7 +20,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/lastname"
+        android:hint="@string/lastname"
         android:ems="10"
         android:id="@+id/editText12"
         android:layout_below="@+id/textView5"
@@ -31,7 +31,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/firstname"
+        android:hint="@string/firstname"
         android:ems="10"
         android:id="@+id/editText13"
         android:layout_below="@+id/editText12"
@@ -45,7 +45,7 @@
         android:id="@+id/editText14"
         android:layout_below="@+id/editText13"
         android:layout_centerHorizontal="true"
-        android:text="@string/phone" />
+        android:hint="@string/phone" />
 
     <EditText
         android:layout_width="300dp"
@@ -55,7 +55,7 @@
         android:id="@+id/editText15"
         android:layout_below="@+id/editText14"
         android:layout_centerHorizontal="true"
-        android:text="@string/state" />
+        android:hint="@string/state" />
 
     <EditText
         android:layout_width="300dp"
@@ -65,7 +65,7 @@
         android:id="@+id/editText16"
         android:layout_below="@+id/editText15"
         android:layout_centerHorizontal="true"
-        android:text="@string/city" />
+        android:hint="@string/city" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,6 +95,5 @@
         android:id="@+id/button10"
         android:layout_below="@+id/textView6"
         android:layout_toRightOf="@+id/button9"
-        android:layout_toEndOf="@+id/button9"
-        android:onClick="cancelar1" />
+        android:layout_toEndOf="@+id/button9" />
 </RelativeLayout>
